@@ -38,10 +38,11 @@ clearDate();
 function testTime() {
 const todayDate = new Date();
 const targetDate = Date.parse(dataInputField.value);
-    addClassButton();
     if (todayDate[Symbol.toPrimitive]('number') > targetDate) {
         window.alert("Please choose a date in the future")
-    }
+        return;
+    } 
+     addClassButton();
 }
 
 function startTime() {
