@@ -18,11 +18,20 @@ img {
 }
 
 
-
 button[data-start="start"] {
+  color: lightsteelblue;
+}
+
+
+button[data-start="deactivation"] {
   color: lightsteelblue;
 }
 
 .activation-date {
   color: black !important;
+}
+
+
+.deactivation-date {
+  color: lightsteelblue;
 }

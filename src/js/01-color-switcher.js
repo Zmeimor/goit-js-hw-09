@@ -11,10 +11,12 @@ startButton.addEventListener('click', () => {
         let colorNumber = getRandomHexColor();
         bodyIns.style.backgroundColor = colorNumber;
     }, 1000);
+    changeClassButton();
 });
     
 stopButton.addEventListener('click', () => {
   clearInterval(timerId);
+  changeClassButton();
 });
 
 function getRandomHexColor() {
@@ -24,5 +26,8 @@ function getRandomHexColor() {
 }
 
 
+function changeClassButton () {
+  startButton.classList.toggle("deactivation-date");
+}
 
 
